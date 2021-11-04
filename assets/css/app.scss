@@ -1,5 +1,10 @@
 /* This file is for your main application css. */
 @import "./phoenix.css";
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 
 /* LiveView specific classes for your customizations */
 .phx-no-feedback.invalid-feedback,
@@ -87,4 +92,8 @@
   color: #a94442;
   display: block;
   margin: -1rem 0 2rem;
+}
+
+#map {
+  height: 800px;
 }

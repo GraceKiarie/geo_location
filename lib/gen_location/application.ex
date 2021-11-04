@@ -14,20 +14,20 @@ defmodule GenLocation.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: GenLocation.PubSub},
       # Start the Endpoint (http/https)
-      GenLocationWeb.Endpoint,
+      GenLocationWeb.Endpoint
       # Start a worker by calling: GenLocation.Worker.start_link(arg)
       # {GenLocation.Worker, arg}
 
-      {GenLocation.Producer, 0},
-      {GenLocation.ProducerConsumer, []},
-      %{
-        id: 1,
-        start: {GenLocation.Consumer, :start_link, [[]]}
-      },
-      %{
-        id: 2,
-        start: {GenLocation.Consumer, :start_link, [[]]}
-      }
+      # {GenLocation.Producer, 0},
+      # {GenLocation.ProducerConsumer, []},
+      # %{
+      #   id: 1,
+      #   start: {GenLocation.Consumer, :start_link, [[]]}
+      # },
+      # %{
+      #   id: 2,
+      #   start: {GenLocation.Consumer, :start_link, [[]]}
+      # }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

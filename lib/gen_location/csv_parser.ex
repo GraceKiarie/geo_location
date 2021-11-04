@@ -1,5 +1,5 @@
 defmodule GenLocation.CsvParser do
-  NimbleCSV.define(MyParser, separator: ",", escape: "\"")
+  # NimbleCSV.define(MyParser, separator: ",", escape: "\"")
 
   def parse_data(path \\ "/home/kiarie/Documents/data_dump.csv") do
     path
